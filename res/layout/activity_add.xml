@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#181818"
+    android:backgroundTint="#181818"
+    tools:context=".AddActivity">
+
+    <TextView
+        android:id="@+id/TambahHewan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="28dp"
+        android:text="Tambah Hewan"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        app:layout_constraintStart_toEndOf="@+id/imagebackButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/namahewan"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textColorHint="#000000"
+        app:boxBackgroundColor="#F2F2F2"
+        app:boxCornerRadiusBottomEnd="20dp"
+        app:boxCornerRadiusBottomStart="20dp"
+        app:boxCornerRadiusTopEnd="20dp"
+        app:boxCornerRadiusTopStart="20dp"
+        app:boxStrokeColor="#000000"
+        app:boxStrokeErrorColor="#FF0000"
+        app:errorTextColor="#FF0000"
+        app:hintTextColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:placeholderTextColor="#000000">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama Hewan"
+            android:textColor="#000000"
+            android:textColorHint="#000000" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/jenishewan"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textColorHint="#000000"
+        app:boxBackgroundColor="#F2F2F2"
+        app:boxCornerRadiusBottomEnd="20dp"
+        app:boxCornerRadiusBottomStart="20dp"
+        app:boxCornerRadiusTopEnd="20dp"
+        app:boxCornerRadiusTopStart="20dp"
+        app:boxStrokeColor="#000000"
+        app:boxStrokeErrorColor="#FF0000"
+        app:errorTextColor="#FF0000"
+        app:helperTextTextColor="#000000"
+        app:hintTextColor="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/namahewan"
+        app:layout_constraintStart_toStartOf="@+id/namahewan"
+        app:layout_constraintTop_toBottomOf="@+id/namahewan"
+        app:placeholderTextColor="#000000">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Jenis Hewan"
+            android:textColor="#000000"
+            android:textColorHint="#000000" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/usiahewan"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textColorHint="#000000"
+        app:boxBackgroundColor="#F2F2F2"
+        app:boxCornerRadiusBottomEnd="20dp"
+        app:boxCornerRadiusBottomStart="20dp"
+        app:boxCornerRadiusTopEnd="20dp"
+        app:boxCornerRadiusTopStart="20dp"
+        app:boxStrokeColor="#000000"
+        app:boxStrokeErrorColor="#FF0000"
+        app:errorTextColor="#FF0000"
+        app:helperTextTextColor="#000000"
+        app:hintTextColor="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/jenishewan"
+        app:layout_constraintStart_toStartOf="@+id/jenishewan"
+        app:layout_constraintTop_toBottomOf="@+id/jenishewan"
+        app:placeholderTextColor="#000000">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Usia Hewan"
+            android:textColor="#000000"
+            android:textColorHint="#000000" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageButton
+        android:id="@+id/imagebackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#181818"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_24"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/Tombol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tambah Hewan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addgambar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        app:srcCompat="@drawable/ic_baseline_add_100"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="170dp"
+        android:layout_height="135dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TambahHewan"
+        app:srcCompat="@drawable/cow" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
